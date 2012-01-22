@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<!-- Set your own title here -->
-		<title>Web-Native Filmmaking</title>
+		<title>Popcorn.js Pop!</title>
 		<!--
 		The base tag makes all relative URLs point to Mozillas server where
 		all the extra scripts and images are hosted.
@@ -44,7 +44,8 @@
 
 		#video-container {
 			position: relative;
-			width: 100%;
+			width: 768px;
+			margin: 1em auto;
 		}
 
 		#video-container .vjs-big-play-button,
@@ -95,49 +96,25 @@
 			top: 0;
 			left: 0;
 		}
-        .resources {
-            width: 200px;
-            height: 480px;
-            position: absolute;
-            z-index: 2;
-            right:10px;
-            margin: 5px;
-        }
-        #VIEWPORT {
-        position: absolute;
-        z-index: 1001;
-        min-width: 600px;
-        min-height: 600px;
-        display: block;
-        width: 90%;
-        height: 90%
-        }
+
 		</style>
 		<script data-butter="project-data" type="application/json"></script>
 	</head>
 	<body>
-			<div class="resources" data-butter="target" id="RESOURCES"></div>
-			<div id="VIEWPORT" data-butter="target"></div>
+		<div id="scale-buttons">
+			<button id="smaller">-</button>
+			<button id="actual-size">1x</button>
+			<button id="bigger">+</button>
+		</div>
 		<div id="video-container" class="video-js-box">
 			<video id="video" preload class="video-js" data-butter="media" controls>
 			</video>
-			<div id="POP-UP" data-butter="target"></div>
+			<div id="pop-container" data-butter="target"></div>
 		</div>
 	</body>
 	<script type="text/javascript" src="../../lib/popcorn/popcorn.js"></script>
 	<script type="text/javascript" src="../../lib/popcorn/popcorn.vimeo.js"></script>
 	<script type="text/javascript" src="../../lib/popcorn/popcorn.youtube.js"></script>
-	<script type="text/javascript" src="../../lib/popcorn/popcorn.timeline.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.soundcloud.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.image.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.footnote.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.twitter.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.subtitle.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.attribution.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.flickr.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.webpage.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.wikipedia.js"></script>
-    <script type="text/javascript" src="../../lib/popcorn/popcorn.googlemap.js"></script>
 	<script type="text/javascript" src="../shared/js/popcorn.pop.js"></script>
 	<script type="text/javascript" src="../shared/js/popcorn.words.js"></script>
   <script type="text/javascript" src="../../butter/src/previewer/butter.previewer.js"></script>

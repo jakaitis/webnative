@@ -1,0 +1,10 @@
+{
+  "title": "Web-Native",
+  "thumbnail": "thumbnail.png",
+  "template": "template.html",
+  "description": "BAVC toolkit",
+  "files": [
+    "template.html",
+    "thumbnail.gif"
+  ]
+}
