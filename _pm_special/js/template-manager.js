@@ -1,7 +1,7 @@
 (function() {
 
   define( [ "utils" ], function( utils ) {
-    var fallbackMedia = "http://videos-cdn.mozilla.net/serv/webmademovies/Moz_Doc_0329_GetInvolved_ST.webm";
+    var fallbackMedia = "http://videos.mozilla.org/serv/webmademovies/voiceover.ogg";
 
     function Template ( root, layoutsDir ) {
       var manifest = utils.getJSON( layoutsDir + "/" + root + "/manifest.json" ),
